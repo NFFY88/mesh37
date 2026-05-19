@@ -1,8 +1,9 @@
 {
   "label": "Прошивки для Meshtastic",
-  "position": 3,
+  "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Информация о прошивках для Meshtastic"
+    "description": "Информация о прошивках для Meshtastic",
+    "slug": "/meshtastic/firmware-for-meshtastic"
   }
 }

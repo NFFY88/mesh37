@@ -3,6 +3,7 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Информация об оборудовании для построения mesh сетей на LoRa"
+    "description": "Информация об оборудовании для построения mesh сетей на LoRa",
+    "slug": "/hardware"
   }
 }

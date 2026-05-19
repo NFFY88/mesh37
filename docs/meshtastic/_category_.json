@@ -3,6 +3,7 @@
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "Всё, что связано с Meshtastic"
+    "description": "Всё, что связано с Meshtastic",
+    "slug": "/meshtastic"
   }
 }
