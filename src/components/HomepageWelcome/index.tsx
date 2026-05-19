@@ -6,7 +6,7 @@ const HomepageWelcome = () => {
     <section className={styles.welcome}>
       <div className="container">
         <Heading as="h2" className="text--center">Добро пожаловать</Heading>
-        <p></p>
+        <p>Давайте дружно крикнем "Аааааааааа" и, возможно, нас услышат</p>
       </div>
     </section>
   );

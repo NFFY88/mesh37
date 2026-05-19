@@ -31,6 +31,19 @@ const config: Config = {
     locales: ['ru'],
   },
 
+   plugins: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        language: ['ru'],
+        docsRouteBasePath: ['/'],
+        hashed: true,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -41,21 +54,6 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             `${GITHUB_REPO_URL}/tree/main/`,
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            `${GITHUB_REPO_URL}/tree/main/`,
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -83,7 +81,10 @@ const config: Config = {
           position: 'left',
           label: 'Документация',
         },
-        // {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'search',
+          position: 'right',
+        },
         {
           href: GITHUB_REPO_URL,
           label: 'GitHub',
