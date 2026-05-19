@@ -1,0 +1,9 @@
+{
+  "label": "Mesh  сети",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Общая информация о mesh сетях",
+    "slug": "/network"
+  }
+}

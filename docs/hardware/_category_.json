@@ -1,6 +1,6 @@
 {
   "label": "Оборудование",
-  "position": 2,
+  "position": 3,
   "link": {
     "type": "generated-index",
     "description": "Информация об оборудовании для построения mesh сетей на LoRa",
