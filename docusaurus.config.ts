@@ -94,7 +94,7 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      // links: [
+      links: [
       //   {
       //     title: 'Docs',
       //     items: [
@@ -104,23 +104,23 @@ const config: Config = {
       //       },
       //     ],
       //   },
-      //   {
-      //     title: 'Community',
-      //     items: [
-      //       {
-      //         label: 'Stack Overflow',
-      //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-      //       },
-      //       {
-      //         label: 'Discord',
-      //         href: 'https://discordapp.com/invite/docusaurus',
-      //       },
-      //       {
-      //         label: 'X',
-      //         href: 'https://x.com/docusaurus',
-      //       },
-      //     ],
-      //   },
+        {
+          title: 'Комьюнити',
+          items: [
+            {
+              label: 'Meshtastic Ivanovo Community в Telegram',
+              href: 'https://t.me/meshtastic37',
+            },
+            {
+              label: 'Резервный чат Meshtastic в Макс',
+              href: 'https://max.ru/join/kjCAJUHdxeWD100bmEMsuREUnaAUc0LVCvWWQuqfxfQ',
+            },
+            {
+              label: 'MeshCore_IWA',
+              href: 'https://t.me/meshcore_iwa',
+            }
+          ],
+        },
       //   {
       //     title: 'More',
       //     items: [
@@ -134,7 +134,7 @@ const config: Config = {
       //       },
       //     ],
       //   },
-      // ],
+      ],
       copyright: `Copyright © ${new Date().getFullYear()} <a href="https://t.me/meshtastic37">Meshtastic Ivanovo Community</a>`,
     },
     prism: {
