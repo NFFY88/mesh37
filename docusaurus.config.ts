@@ -6,7 +6,7 @@ import { GITHUB_REPO_URL } from './src/const';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Mesh Иваново',
+  title: 'Mesh сообщество Иваново',
   tagline: 'Сообщество mesh сетей в городе Иванове',
   favicon: 'img/favicon.ico',
 
@@ -69,7 +69,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Mesh 37',
+      title: 'Mesh сообщество Иваново',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
