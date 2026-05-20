@@ -135,7 +135,7 @@ const config: Config = {
       //     ],
       //   },
       // ],
-      // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://t.me/meshtastic37">Meshtastic Ivanovo Community</a>`,
     },
     prism: {
       theme: prismThemes.github,
