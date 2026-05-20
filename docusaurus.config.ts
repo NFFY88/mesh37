@@ -112,7 +112,7 @@ const config: Config = {
               href: 'https://t.me/meshtastic37',
             },
             {
-              label: 'Резервный чат Meshtastic в Макс',
+              label: 'Резервный чат Meshtastic37 в Макс',
               href: 'https://max.ru/join/kjCAJUHdxeWD100bmEMsuREUnaAUc0LVCvWWQuqfxfQ',
             },
             {
