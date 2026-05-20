@@ -2,7 +2,7 @@
   "label": "Reticulum",
   "position": 6,
   "link": {
-    "description": "Всё, что связано с Reticulum",
-    "slug": "/reticulum"
+    "type": "doc",
+    "id": "reticulum/index"
   }
 }

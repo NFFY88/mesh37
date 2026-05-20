@@ -2,7 +2,7 @@
   "label": "Meshcore",
   "position": 5,
   "link": {
-    "description": "Всё, что связано с Meshcore",
-    "slug": "/meshcore"
+    "type": "doc",
+    "id": "meshcore/index"
   }
 }
