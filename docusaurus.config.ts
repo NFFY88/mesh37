@@ -38,6 +38,7 @@ const config: Config = {
         language: ['ru'],
         docsRouteBasePath: ['/'],
         hashed: true,
+        indexDocs: true,
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
       },
