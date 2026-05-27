@@ -5,10 +5,10 @@ import { GITHUB_REPO_URL } from "./src/const";
 require('dotenv').config();
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-console.log(process.env)
 
 const SITE_CONFIG = {
   isProduction: process.env.MODE === 'production',
+  isStaging: process.env.MODE === 'staging',
 }
 
 const config: Config = {
