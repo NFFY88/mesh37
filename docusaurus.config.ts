@@ -1,14 +1,20 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
-import { GITHUB_REPO_URL } from './src/const';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
+import { GITHUB_REPO_URL } from "./src/const";
+require('dotenv').config();
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+console.log(process.env)
+
+const SITE_CONFIG = {
+  isProduction: process.env.MODE === 'production',
+}
 
 const config: Config = {
-  title: 'Mesh сообщество Иваново',
-  tagline: 'Сообщество mesh сетей в городе Иванове',
-  favicon: 'img/favicon.ico',
+  title: "Mesh сообщество Иваново",
+  tagline: "Сообщество mesh сетей в городе Иванове",
+  favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -16,27 +22,27 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://mesh37.ru',
+  url: "https://mesh37.ru",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'ru',
-    locales: ['ru'],
+    defaultLocale: "ru",
+    locales: ["ru"],
   },
 
-   plugins: [
+  plugins: [
     [
-      '@easyops-cn/docusaurus-search-local',
+      "@easyops-cn/docusaurus-search-local",
       {
-        language: ['ru'],
-        docsRouteBasePath: ['/'],
+        language: ["ru"],
+        docsRouteBasePath: ["/"],
         hashed: true,
         indexDocs: true,
         highlightSearchTermsOnTargetPage: true,
@@ -47,17 +53,16 @@ const config: Config = {
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            `${GITHUB_REPO_URL}/tree/main/`,
+          editUrl: `${GITHUB_REPO_URL}/tree/main/`,
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -65,76 +70,76 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/docusaurus-social-card.jpg",
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Mesh сообщество Иваново',
+      title: "Mesh сообщество Иваново",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "My Site Logo",
+        src: "img/logo.svg",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Документация',
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "Документация",
         },
         {
-          type: 'search',
-          position: 'right',
+          type: "search",
+          position: "right",
         },
         {
           href: GITHUB_REPO_URL,
-          label: 'GitHub',
-          position: 'right',
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
-      //   {
-      //     title: 'Docs',
-      //     items: [
-      //       {
-      //         label: 'Tutorial',
-      //         to: '/docs/intro',
-      //       },
-      //     ],
-      //   },
+        //   {
+        //     title: 'Docs',
+        //     items: [
+        //       {
+        //         label: 'Tutorial',
+        //         to: '/docs/intro',
+        //       },
+        //     ],
+        //   },
         {
-          title: 'Комьюнити',
+          title: "Комьюнити",
           items: [
             {
-              label: 'Meshtastic Ivanovo Community в Telegram',
-              href: 'https://t.me/meshtastic37',
+              label: "Meshtastic Ivanovo Community в Telegram",
+              href: "https://t.me/meshtastic37",
             },
             {
-              label: 'Резервный чат Meshtastic37 в Макс',
-              href: 'https://max.ru/join/kjCAJUHdxeWD100bmEMsuREUnaAUc0LVCvWWQuqfxfQ',
+              label: "Резервный чат Meshtastic37 в Макс",
+              href: "https://max.ru/join/kjCAJUHdxeWD100bmEMsuREUnaAUc0LVCvWWQuqfxfQ",
             },
             {
-              label: 'MeshCore_IWA',
-              href: 'https://t.me/meshcore_iwa',
-            }
+              label: "MeshCore_IWA",
+              href: "https://t.me/meshcore_iwa",
+            },
           ],
         },
-      //   {
-      //     title: 'More',
-      //     items: [
-      //       {
-      //         label: 'Blog',
-      //         to: '/blog',
-      //       },
-      //       {
-      //         label: 'GitHub',
-      //         href: 'https://github.com/facebook/docusaurus',
-      //       },
-      //     ],
-      //   },
+        //   {
+        //     title: 'More',
+        //     items: [
+        //       {
+        //         label: 'Blog',
+        //         to: '/blog',
+        //       },
+        //       {
+        //         label: 'GitHub',
+        //         href: 'https://github.com/facebook/docusaurus',
+        //       },
+        //     ],
+        //   },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} <a href="https://t.me/meshtastic37">Meshtastic Ivanovo Community</a>`,
     },
@@ -143,9 +148,16 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+    headTags: [
+    {
+      tagName: 'script',
+      attributes: { type: 'text/javascript' },
+      innerHTML: `window.SITE_CONFIG = ${JSON.stringify(SITE_CONFIG)};`,
+    },
+  ],
   scripts: [
     {
-      src: '/js/scripts.js',
+      src: "/js/scripts.js",
       async: true,
     },
   ],
