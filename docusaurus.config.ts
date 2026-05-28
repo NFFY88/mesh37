@@ -154,6 +154,10 @@ const config: Config = {
       attributes: { type: 'text/javascript' },
       innerHTML: `window.SITE_CONFIG = ${JSON.stringify(SITE_CONFIG)};`,
     },
+    {
+      tagName: 'meta',
+      attributes: { name: 'yandex-verification', content: 'd75955a0ad5de4f0' },
+    }
   ],
   scripts: [
     {
