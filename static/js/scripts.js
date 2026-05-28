@@ -1,4 +1,7 @@
 const { isProduction, isStaging } = window.SITE_CONFIG;
 
-console.log('isProduction', isProduction);
-console.log('isStaging', isStaging);
+const PROD_HOSTNAME = 'mesh37.com';
+
+if (isProduction && window.location.hostname === PROD_HOSTNAME) {
+    console.log('Production mode');
+}
