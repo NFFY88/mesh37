@@ -2,14 +2,14 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 import { GITHUB_REPO_URL } from "./src/const";
-require('dotenv').config();
+require("dotenv").config();
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const SITE_CONFIG = {
-  isProduction: process.env.MODE === 'production',
-  isStaging: process.env.MODE === 'staging',
-}
+  isProduction: process.env.MODE === "production",
+  isStaging: process.env.MODE === "staging",
+};
 
 const config: Config = {
   title: "Mesh сообщество Иваново",
@@ -70,7 +70,14 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    // image: "img/docusaurus-social-card.jpg",
+    metadata: [
+      {
+        name: "keywords",
+        content:
+          "mesh, LoRa, Meshtastic, Ivanovo, Иваново, community, LoRa сеть Иваново, радиосвязь без интернета, оффлайн чат, децентрализованная сеть",
+      },
+    ],
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -148,16 +155,16 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
-    headTags: [
+  headTags: [
     {
-      tagName: 'script',
-      attributes: { type: 'text/javascript' },
+      tagName: "script",
+      attributes: { type: "text/javascript" },
       innerHTML: `window.SITE_CONFIG = ${JSON.stringify(SITE_CONFIG)};`,
     },
     {
-      tagName: 'meta',
-      attributes: { name: 'yandex-verification', content: 'd75955a0ad5de4f0' },
-    }
+      tagName: "meta",
+      attributes: { name: "yandex-verification", content: "d75955a0ad5de4f0" },
+    },
   ],
   scripts: [
     {
