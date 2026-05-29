@@ -84,8 +84,10 @@ const config: Config = {
     navbar: {
       title: "Mesh сообщество Иваново",
       logo: {
-        alt: "My Site Logo",
+        alt: "Mesh37 Logo",
         src: "img/logo.svg",
+        width: 32,
+        height: 32
       },
       items: [
         {
