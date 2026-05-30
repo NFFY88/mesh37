@@ -167,6 +167,14 @@ const config: Config = {
       tagName: "meta",
       attributes: { name: "yandex-verification", content: "d75955a0ad5de4f0" },
     },
+    {
+      tagName: "script",
+      attributes: {
+        type: "text/javascript",
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=G-84Q9WYQRW3",
+      },
+    },
   ],
   scripts: [
     {
