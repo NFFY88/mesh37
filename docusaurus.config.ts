@@ -171,7 +171,7 @@ const config: Config = {
       tagName: "script",
       attributes: {
         type: "text/javascript",
-        async: true,
+        async: "true",
         src: "https://www.googletagmanager.com/gtag/js?id=G-84Q9WYQRW3",
       },
     },
