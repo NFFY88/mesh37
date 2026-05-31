@@ -1,25 +1,28 @@
-# Website
+# Mesh37
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Данный репозиторий хранит исходный код Docusaurus‑сайта, который развёрнут на https://mesh37.ru/
 
-## Installation
+
+## Быстрый старт
+
+### Установка
 
 ```bash
 yarn
 ```
 
-## Local Development
+### Локальная разработка
 
 ```bash
 yarn start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Эта команда запускает локальный сервер разработки и открывает окно браузера. Большинство изменений отображаются в режиме реального времени без необходимости перезапуска сервера.
 
-## Build
+### Сборка
 
 ```bash
 yarn build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Эта комианда собирает статический контент в папку `build`.
