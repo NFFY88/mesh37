@@ -1,0 +1,8 @@
+{
+  "label": "Клиенты",
+  "position": 40,
+  "link": {
+    "type": "doc",
+    "id": "meshtastic/software/index"
+  }
+}
