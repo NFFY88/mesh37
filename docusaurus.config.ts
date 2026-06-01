@@ -14,7 +14,6 @@ const SITE_CONFIG = {
 const config: Config = {
   title: "Mesh сообщество Иваново",
   tagline: "Сообщество mesh сетей в городе Иванове",
-  favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -175,6 +174,14 @@ const config: Config = {
         src: "https://www.googletagmanager.com/gtag/js?id=G-84Q9WYQRW3",
       },
     },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "icon",
+        type: "image/x-icon",
+        href: "favicon.ico",
+      }
+    }
   ],
   scripts: [
     {
