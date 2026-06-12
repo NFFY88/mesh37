@@ -1,0 +1,8 @@
+{
+    "label": "Настройки радиомодуля",
+    "position": 10,
+    "link": {
+        "type": "doc",
+        "id": "meshtastic/node-settings/radio_configuration/index"
+    }
+}
