@@ -133,6 +133,10 @@ const config: Config = {
               label: "MeshCore_IWA",
               href: "https://t.me/meshcore_iwa",
             },
+            {
+              label: "Reticulum Ivanovo",
+              href: "https://t.me/reticulum37",
+            }
           ],
         },
         //   {
