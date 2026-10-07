@@ -1,3 +1,9 @@
 .welcome {
     padding: var(--section-padding-m);
 }
+
+.info {
+    background-color: var(--ifm-hr-background-color);
+    padding: var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal);
+    border-radius: 1rem;
+}
