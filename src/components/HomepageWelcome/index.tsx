@@ -23,7 +23,7 @@ const HomepageWelcome = () => {
         </p>
       </div>
 
-      <div className="container margin-vert--lg">
+      {/* <div className="container margin-vert--lg">
         <div className={styles.info}>
           <Heading as="h2" className="text--center">
             Тестовый переход на MediumFast
@@ -91,7 +91,7 @@ const HomepageWelcome = () => {
             MediumFast, чтобы восстановить связь с другими нодами.
           </p>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
